@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  </head>
+  <body>
+    <script
+    src="http://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="site.js"></script>
+    <!-- brand -->
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="petsite.html">Hoang Family Pets</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Contact Me <span class="sr-only">(current)</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Navigation <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="petsite.html">Home</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+        </nav>
+
+    <!-- Jumbotron -->
+        <div class='container'>
+          <div class="jumbotron">
+            <h2><strong>Contact Form</strong></h2>
+
+            <form action="" method="post">
+              <h3>Contact Information</h3>
+
+              <label for="namefirst">First Name: </label>
+              <input id="namefirst" type="text" name="firstname" value="" required>
+
+              <label for="namelast">Last Name: </label>
+              <input id="namelast" type="text" name="lastname" value="" required>
+
+              <br>
+
+              <label for="">Email Address: </label>
+              <input id="useremail" type="email" name="userem" value="" required placeholder="user@domain.com">
+
+              <!-- To link the choices together, give them the same name so they can
+              only select one option -->
+
+              <h3>How did you hear about us?</h3>
+              <!-- dropdown menu -->
+              <select name="source">
+                <option value="other">Other</option>
+                <option value="fb">Facebook</option>
+                <option value="google">Google</option>
+                <option value="yahoo">Yahoo</option>
+              </select>
+
+              <!-- Text Area INPUT -->
+              <h3>Comments</h3>
+
+              <textarea name="mytext" rows="8" cols="80" required></textarea>
+
+              <p><input type="submit" name="" value="Submit"></p>
+            </form>
+          </div> <!--jumbotron div -->
+        </div> <!--container div -->
+
+        <!-- footer -->
+        <div class="container text-center" id="footer">
+            <hr />
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="col-md-4">
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="#">About me</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="#">Analytics</a></li>
+                  <li><a href="https://github.com/nathanthomashoang">GitHub</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="#">Media</a></li>
+                  <li><a href="siteform.html">Contact Me</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav nav-pills nav-justified">
+                        <li><a href="#">© 2020 NTH</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+  </body>
+</html>
